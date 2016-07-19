@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html ng-app="ceb">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ceb</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <!-- TODO: Remove gulp partials, as angular supports partials in default -->
+    @@include('./partials/_header.html')
+    <!-- Section to load different views-->
+    <section class="section-app" ui-view>
+    </section>
+    <!-- @@include('./partials/_footer.html') -->
+    <!-- JS files -->
+    <script src="js/bower.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
