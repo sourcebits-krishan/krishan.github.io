@@ -152,8 +152,9 @@ Question page VIEW
         <div class="container ceb-question-container">
             <div class="row">
                 <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">
-                    <label class="section-heading">QUESTION</label>
-                    <p class="ceb-question">What is the minimum required purchase for a Retailer Discount?</p>
+                <div class="question-heading-group">  <label class="section-heading">QUESTION</label>
+                    <p class="ceb-question">What is the minimum required purchase for a Retailer Discount?</p></div>
+                   
                     <div class="row">
                         <div class="options-margin" ng-repeat="option in ques.test.options">
                             <div class="ceb-options" ng-class="{'active': ques.answer == option}" ng-click="ques.answer = option">
