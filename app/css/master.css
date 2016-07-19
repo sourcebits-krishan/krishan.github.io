@@ -6684,15 +6684,12 @@ table.time {
 .white-div {
   width: 100%;
   background-color: white;
-  padding: 10px;
+  padding: 1px;
   padding-bottom: 50px;
   font-size: 16px; }
 
 .ceb-question-container {
   margin: 20px auto; }
-
-.question-heading-group {
-  margin: auto -10px; }
 
 .ceb-options {
   font-size: 16px;
@@ -6741,8 +6738,8 @@ table.time {
 .options-margin {
   margin-top: 10px;
   margin-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px; }
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .btn-ceb {
   outline: none;
