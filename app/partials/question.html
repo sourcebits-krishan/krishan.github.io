@@ -8,14 +8,14 @@ Question page VIEW
         </uib-progressbar>
     </div>
     <!--  timer -->
-    <table class="time" ng-click="ques.closeOptions()">
+    <table class="time">
         <tr>
             <td></td>
             <td class="fix"> <span><img src="/images/timerClock.png" alt="Clock icon"> {{ques.display}}</span> </td>
             <td></td>
         </tr>
     </table>
-    <div class="container instructions" ng-class="{'fadein': ques.open}" ng-click="ques.closeOptions()">
+    <div class="container instructions">
         <div class="row">
             <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">
                 <label class="section-heading">INFORMATION</label>
@@ -147,20 +147,14 @@ Question page VIEW
         </div>
     </div>
     <!-- container -->
-    <div class="bottom-div" ng-class="{'open': ques.open}" ng-click="ques.open ||ques.openOptions()">
-        <div class="text-center slider-div-up" ng-if="!ques.open">
-            <span class="slider-btn-up"> <span class="glyphicon glyphicon-triangle-top"></span> Tap for answers</span>
-        </div>
-        <div class="text-center slider-div-down" ng-if="ques.open" ng-click="ques.closeOptions();$event.stopPropagation();">
-            <span class="slider-btn-down"> <span class="glyphicon glyphicon-triangle-bottom"></span> Tap for information</span>
-        </div>
+    <div class="white-div">
         <div class="container ceb-question-container">
             <div class="row">
-                <div class="col-sm-offset-3 col-sm-6">
+                <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">
                     <label class="section-heading">QUESTION</label>
                     <p class="ceb-question">What is the minimum required purchase for a Retailer Discount?</p>
                     <div class="row">
-                        <div class="col-xs-6 options-margin" ng-repeat="option in ques.test.options">
+                        <div class="options-margin" ng-repeat="option in ques.test.options">
                             <div class="ceb-options" ng-class="{'active': ques.answer == option}" ng-click="ques.answer = option">
                                 <span class="sr-only">Option {{$index+1}} {{option}}</span>
                                 <span>{{option}}</span>
@@ -176,22 +170,18 @@ Question page VIEW
                 </div>
             </div>
         </div>
-        <!--  <div class="progress">
-  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-    <span class="sr-only">40% Complete (success)</span>
-  </div>
-</div> -->
     </div>
     <!-- bottom-div -->
-    <div class="ceb-question-progressbar">
-    <span class="ceb-progress-dot"></span>
-    <span class="ceb-progress-dot"></span>
-    <span class="ceb-progress-dot"></span> 
-    <span class="ceb-question-status  pull-right">12 of 20</span>
-    <span class="ceb-progress-dot margin-left-10    pull-right" ></span> 
-
-        <uib-progressbar class="progress-striped" value="22" type="warning"></uib-progressbar>
-   
+    <div class="ceb-question-progressbar
+">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+                    <span class="ceb-question-status  pull-right">12 of 20</span>
+                    <uib-progressbar class="progress-striped" value="22" type="warning"></uib-progressbar>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-- questions controler  -->
