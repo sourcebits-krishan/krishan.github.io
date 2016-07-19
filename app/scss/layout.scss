@@ -100,7 +100,6 @@ table.time {
 
 .container.instructions {
     font-size: 16px;
-    padding-top: 50px;
 }
 
 .section-heading {
@@ -111,7 +110,10 @@ table.time {
 
 
 /* Tab Button */
+.btn-tab-group{
+        padding: 5px 10px 10px;
 
+}
 .btn-tab {
     color: rgb(255, 255, 255);
     background-color: rgb(35, 35, 43);
@@ -189,9 +191,8 @@ table.time {
 }
 
 .ceb-question {
-    padding: 10px;
-    margin: 10px auto;
     font-size: 16px;
+    margin: 0px -10px 10px;
 }
 
 .ceb-options {
@@ -246,7 +247,7 @@ table.time {
 }
 
 .options-margin {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px;
