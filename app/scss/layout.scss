@@ -61,14 +61,14 @@ footer {
         border-radius: 0px;
         font-family: 'proxima_regular';
         background-color: rgb(245, 245, 245);
-        -webkit-box-shadow: 0px -1px 0px 0px rgb(255, 255, 255), 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
-        -moz-box-shadow: 0px -1px 0px 0px rgb(255, 255, 255), 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
-        box-shadow: 0px -1px 0px 0px rgb(255, 255, 255), 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+        -webkit-box-shadow: 0px -1px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: 0px -1px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px -1px 0px 0px rgb(255, 255, 255), 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
     }
     .progress-bar {
-        -webkit-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.50), 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
-        -moz-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.50), 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
-        box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.50), 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+        -webkit-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.50), 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.50), 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.50), 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
         background-color: #7ed321;
     }
 }
@@ -115,6 +115,9 @@ h1.section-heading {
 .btn-tab-group{
         padding: 5px 10px 10px;
 
+        .btn{
+         padding: 5px;
+        }
 }
 
 .btn-tab {
@@ -122,6 +125,7 @@ h1.section-heading {
     background-color: rgb(35, 35, 43);
     border-color: rgb(255, 255, 255);
     font-size: 16px;
+
 }
 
 .btn-tab:focus,

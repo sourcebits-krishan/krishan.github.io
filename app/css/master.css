@@ -6590,14 +6590,14 @@ footer {
   border-radius: 0px;
   font-family: 'proxima_regular';
   background-color: whitesmoke;
-  -webkit-box-shadow: 0px -1px 0px 0px white, 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0px -1px 0px 0px white, 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px -1px 0px 0px white, 0px 1px 0px 0px rgba(0, 0, 0, 0.08); }
+  -webkit-box-shadow: 0px -1px 0px 0px white, 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px -1px 0px 0px white, 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px -1px 0px 0px white, 0px 0px 0px 0px rgba(0, 0, 0, 0.08); }
 
 .timer-bar .progress-bar {
-  -webkit-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.5), 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.5), 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.5), 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.5), 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.5), 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.5), 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
   background-color: #7ed321; }
 
 table.time {
@@ -6634,6 +6634,8 @@ h1.section-heading {
 /* Tab Button */
 .btn-tab-group {
   padding: 5px 10px 10px; }
+  .btn-tab-group .btn {
+    padding: 5px; }
 
 .btn-tab {
   color: white;
