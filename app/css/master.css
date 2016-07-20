@@ -6632,6 +6632,9 @@ h1.section-heading {
   color: #ffffff;
   opacity: .5; }
 
+h1.section-heading.question {
+  color: #000000; }
+
 /* Tab Button */
 .btn-tab-group {
   padding: 5px 10px 10px; }
