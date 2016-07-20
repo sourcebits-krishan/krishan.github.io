@@ -78,6 +78,7 @@ table.time {
     width: 100%;
     position: relative;
     top: -20px;
+    margin-bottom: -20px;
     td:not(.fix) {
         background-image: linear-gradient(to bottom, transparent, transparent 40%, #23232b 40%, #23232b);
         background-image: -webkit-linear-gradient(to bottom, transparent, transparent 40%, #23232b 40%, #23232b);
@@ -102,10 +103,11 @@ table.time {
     font-size: 16px;
 }
 
-.section-heading {
-    color: #67676D;
-    font-size: 14px;
+h1.section-heading {
+    color: #6f6f74;
+    font-size: 13px;
     font-family: 'proxima_semibold';
+    letter-spacing: 1px;
 }
 
 
@@ -183,13 +185,8 @@ table.time {
 .white-div {
     width: 100%;
     background-color: white;
-    padding: 1px;
     padding-bottom: 50px;
-     font-size: 16px;
-}
-
-.ceb-question-container {
-    margin: 20px auto;
+    font-size: 16px;
 }
 
 
