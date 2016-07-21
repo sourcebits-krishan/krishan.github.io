@@ -1,6 +1,243 @@
 {
-    "question": "What is the minimum required purchase for a Retailer Discount?",
-    "options": ["$100", "$200", "$300", "$400", "$500"],
+   
+    "questions": [{
+        "question": "What was the amount of the June 9, 2007 purchase?",
+        "options": [
+            {
+                "option": "$310.12",
+                "isCorreect": "No"
+            }, {
+                "option": "$278.45",
+                "isCorreect": "Yes"
+            }, {
+                "option": "$55.75",
+                "isCorreect": "No"
+            }, {
+                "option": "$98.15",
+                "isCorreect": "No"
+            }, {
+                "option": "$115.35",
+                "isCorreect": "No"
+            }
+        ]
+    }, {
+        "question": "What was the amount of the July 10, 2007 purchase?",
+        "options": [
+         {
+            "option": "$310.12",
+            "isCorreect": "No"
+        }, {
+            "option": "$278.45",
+            "isCorreect": "No"
+        }, {
+            "option": "$55.75",
+            "isCorreect": "No"
+        }, {
+            "option": "$98.15",
+            "isCorreect": "No"
+        }, {
+            "option": "$115.35",
+            "isCorreect": "Yes"
+        }]
+    },
+    {
+        "question": "What is the minimum required purchase for a Retailer Discount?",
+        "options": [
+            {
+                "option": "$100.00",
+                "isCorreect": "No"
+            }, {
+                "option": "$102.50",
+                "isCorreect": "No"
+            }, {
+                "option": "$200.00",
+                "isCorreect": "Yes"
+            }, {
+                "option": "$210.00",
+                "isCorreect": "No"
+            }, {
+                "option": "$300.00",
+                "isCorreect": "No"
+            }
+        ]
+    },
+    {
+        "question": "What is the minimum required purchase for the Retailer Cash-Back Bonus?",
+        "options": [
+            {
+                "option": "$300.00",
+                "isCorreect": "No"
+            }, {
+                "option": "$100.00",
+                "isCorreect": "Yes"
+            }, {
+                "option": "$210.00",
+                "isCorreect": "No"
+            }, {
+                "option": "$102.50",
+                "isCorreect": "No"
+            }, {
+                "option": "$200.00",
+                "isCorreect": "No"
+            }
+        ]
+    },
+    {
+        "question": "When was the purchase of $310.12 made?",
+        "options": [
+         {
+                "option": "12/05/2007",
+                "isCorreect": "Yes"
+            }, {
+                "option": "09/06/2007",
+                "isCorreect": "No"
+            }, {
+                "option": "22/06/2007",
+                "isCorreect": "No"
+            }, {
+                "option": "03/07/2007",
+                "isCorreect": "No"
+            }, {
+                "option": "10/07/2007",
+                "isCorreect": "No"
+            }
+        ]
+    },
+    {
+        "question": "How many customer transactions are eligible for the Retailer Cash-Back Bonus?",
+        "options": [
+         {
+                "option": 0,
+                "isCorreect": "No"
+            }, {
+                "option": 1,
+                "isCorreect": "No"
+            }, {
+                "option": 2,
+                "isCorreect": "Yes"
+            }, {
+                "option": 4,
+                "isCorreect": "No"
+            }, {
+                "option": 5,
+                "isCorreect": "No"
+            }
+        ]
+    },
+    {
+        "question": "How many customer transactions are not eligible for the Retailer Cash-Back Bonus?",
+        "options": [
+
+            {
+                "option": 0,
+                "isCorreect": "No"
+            }, {
+                "option": 1,
+                "isCorreect": "No"
+            }, {
+                "option": 2,
+                "isCorreect": "No"
+            }, {
+                "option": 4,
+                "isCorreect": "Yes"
+            }, {
+                "option": 5,
+                "isCorreect": "No"
+            }
+        ]
+    },
+
+
+    {
+        "question": "How many customer transactions are eligible for the Retailer Cash-Back Bonus in June?",
+        "options": [
+            {
+                "option": 0,
+                "isCorreect": "No"
+            }, {
+                "option": 1,
+                "isCorreect": "Yes"
+            }, {
+                "option": 2,
+                "isCorreect": "No"
+            }, {
+                "option": 3,
+                "isCorreect": "No"
+            }, {
+                "option": 4,
+                "isCorreect": "No"
+            }
+        ]
+    },
+
+
+    {
+        "question": "The Retailer Discount and Retailer Cash-Back Bonus have a limited program length.  For which of the following dates would the discounts not apply?",
+        "options": [
+            {
+                "option": "03/06/2007",
+                "isCorreect": "No"
+            }, {
+                "option": "13/06/2007",
+                "isCorreect": "No"
+            }, {
+                "option": "01/07/2007",
+                "isCorreect": "No"
+            }, {
+                "option": "13/07/2007",
+                "isCorreect": "No"
+            }, {
+                "option": "21/12/2007",
+                "isCorreect": "Yes"
+            }
+        ]
+    },
+
+
+
+    {
+        "question": "How many customer transactions are eligible for both the Retailer Discount and Cash-Back Bonus in June?",
+        "options": [
+         {
+                "option": 0,
+                "isCorreect": "No"
+            }, {
+                "option": 1,
+                "isCorreect": "Yes"
+            }, {
+                "option": 2,
+                "isCorreect": "No"
+            }, {
+                "option": 3,
+                "isCorreect": "No"
+            }, {
+                "option": 4,
+                "isCorreect": "No"
+            }
+        ]
+    },
+    {
+        "question": "How many customer transactions are eligible for the Retailer Discount in July?",
+        "options": [
+            {
+                "option": 0,
+                "isCorreect": "Yes"
+            }, {
+                "option": 1,
+                "isCorreect": "No"
+            }, {
+                "option": 2,
+                "isCorreect": "No"
+            }, {
+                "option": 3,
+                "isCorreect": "No"
+            }, {
+                "option": 4,
+                "isCorreect": "No"
+            }
+        ]
+    }
+],
     "instruction": [
 
         {

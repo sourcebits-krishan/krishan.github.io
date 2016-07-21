@@ -150,25 +150,25 @@ Question page VIEW
     </div>
     <!-- container -->
     <div class="white-div">
-        <div class="container">
+        <div class="container questions">
             <div class="row">
                 <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">
                     <div class="question-heading-group">
                         <h1 class="section-heading question">QUESTION</h1>
-                        <p class="ceb-question">What is the minimum required purchase for a Retailer Discount?</p>
+                        <p class="ceb-question">{{ques.test.currentQuestion.question}}</p>
                     </div>
                     <div class="row">
-                        <div class="options-margin" ng-repeat="option in ques.test.options">
-                            <div class="ceb-options" ng-class="{'active': ques.answer == option}" ng-click="ques.answer = option">
-                                <span class="sr-only">Option {{$index+1}} {{option}}</span>
-                                <span>{{option}}</span>
-                                <input class="pull-right" type="radio" name="optradio" ng-model="ques.answer" ng-value="option">
+                        <div class="options-margin" ng-repeat="option in ques.test.currentQuestion.options">
+                            <div class="ceb-options" ng-class="{'active': ques.answer == option.option}" ng-click="ques.answer = option.option">
+                                <span class="sr-only">Option {{$index+1}} {{option.option}}</span>
+                                <span>{{option.option}}</span>
+                                <input class="pull-right" type="radio" name="optradio" ng-model="ques.answer" ng-value="option.option">
                                 <label>
                                 </label>
                             </div>
                         </div>
                         <div class="col-xs-12 options-margin">
-                            <button class="btn btn-ceb">NEXT</button>
+                            <button class="btn btn-ceb" ng-click="ques.showNextQuestion()">NEXT</button>
                         </div>
                     </div>
                 </div>
@@ -184,9 +184,9 @@ Question page VIEW
                     <span class="ceb-progress-dot active"></span>
                     <span class="ceb-progress-dot active"></span>
                     <span class="ceb-progress-dot active"></span>
-                    <span class="ceb-question-status pull-right">12 of 20</span>
+                    <span class="ceb-question-status pull-right">{{ques.currnetQuestionIndex+1}} of {{ques.totalQuestions}}</span>
                     <span class="ceb-progress-dot margin-left-10 pull-right"></span>
-                    <uib-progressbar class="progress-striped" value="22" type="warning"></uib-progressbar>
+                    <uib-progressbar class="progress-striped" value="ques.questionProgressPercent" type="warning"></uib-progressbar>
                 </div>
             </div>
         </div>

@@ -6922,6 +6922,18 @@ input[type=radio]:not(old):checked + label {
   .ceb-question-progressbar .row > div {
     padding: 0px; }
 
+.questions .ng-enter {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-right: 80%; }
+
+.questions .ng-enter-active {
+  margin-right: 0px; }
+
+.questions .ng-move {
+  -webkit-transition: .5s;
+  transition: .5s; }
+
 /*-------------------------------------------------
 SMACSS: LAYOUT - HEADER
 -------------------------------------------------*/

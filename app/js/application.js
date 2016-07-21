@@ -2,7 +2,7 @@
 App ceb
 ==================================================================*/
 'use strict';
-angular.module('ceb', ['ui.router','ui.bootstrap'])
+angular.module('ceb', ['ui.router','ui.bootstrap','ngAnimate'])
 
 .config(['$stateProvider', "$urlRouterProvider", function($stateProvider, $urlRouterProvider) {
 
