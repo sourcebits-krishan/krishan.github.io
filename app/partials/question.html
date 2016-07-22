@@ -2,19 +2,22 @@
 Question page VIEW
  **************** -->
 <div ng-controller="questionController as ques">
-    <div class="timer-bar">
+<div id="sticky-anchor"></div>
+<div id="sticky"> <div class="timer-bar" >
         <uib-progressbar value="ques.percent">
             <span class="sr-only">Split button!</span>
         </uib-progressbar>
     </div>
     <!--  timer -->
+   
     <table class="time">
         <tr>
             <td></td>
-            <td class="fix"> <span><img src="/images/timerClock.png" alt="Clock icon"> {{ques.display}}</span> </td>
+            <td class="fix"> <span><img src="/images/timerClock.png" alt="Clock icon"> {{ques.display}}</span></td>
             <td></td>
         </tr>
-    </table>
+    </table></div>
+   
     <div class="container instructions">
         <div class="row">
             <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">

@@ -9,13 +9,13 @@ angular
 // TIMER DEMO
 
 
-function questionController($scope, $http, $log) {
+function questionController($scope, $http, $log,$document) {
 
     var vm = this;
     vm.open = false;
     vm.tab = true;
      vm.questionProgressPercent  = 0;
-
+        var someElement = angular.element(document.getElementById('sticky'));
     vm.openOptions = function() {
         //    if (e.target !== this)
         // return;
@@ -46,6 +46,7 @@ function questionController($scope, $http, $log) {
             vm.test.currentQuestion = vm.test.questions[vm.currnetQuestionIndex];
         }
         calcQuestioPercent();
+         $document.scrollToElementAnimated(someElement);
     }
 
      function calcQuestioPercent(){
@@ -79,6 +80,9 @@ function questionController($scope, $http, $log) {
 
 
 
+ 
+   
+  
 }
 /* -------------------
 QUESTIONS CONTROLLER END

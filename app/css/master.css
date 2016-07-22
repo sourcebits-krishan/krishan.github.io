@@ -6584,6 +6584,12 @@ footer {
     -moz-box-shadow: 0px 1px 8px 0px rgba(255, 255, 255, 0.75);
     box-shadow: 0px 1px 8px 0px rgba(255, 255, 255, 0.75); }
 
+#sticky {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  z-index: 1000; }
+
 /*TImer*/
 .timer-bar .progress {
   margin-bottom: 0px;
@@ -6751,6 +6757,7 @@ h1.section-heading.question {
   color: white;
   height: 44px;
   border-radius: 0px;
+  font-family: 'proxima_semibold';
   border: 0px;
   width: 100%;
   color: white;
@@ -6783,7 +6790,8 @@ h1.section-heading.question {
 
 .btn-ceb:active,
 .btn-ceb:focus {
-  outline: none; }
+  outline: none;
+  color: white; }
 
 .btn-ceb:hover {
   color: white;
@@ -6953,6 +6961,9 @@ header {
 /*-------------------------------------------------
 SMACSS: LAYOUT - SECTION
 -------------------------------------------------*/
+section {
+  margin-top: 50px; }
+
 /*-------------------------------------------------
 SMACSS: LAYOUT - FOOTER
 -------------------------------------------------*/

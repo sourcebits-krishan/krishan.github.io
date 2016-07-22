@@ -2,7 +2,7 @@
 App ceb
 ==================================================================*/
 'use strict';
-angular.module('ceb', ['ui.router','ui.bootstrap','ngAnimate'])
+angular.module('ceb', ['ui.router','ui.bootstrap','ngAnimate','duScroll'])
 
 .config(['$stateProvider', "$urlRouterProvider", function($stateProvider, $urlRouterProvider) {
 
@@ -13,3 +13,6 @@ angular.module('ceb', ['ui.router','ui.bootstrap','ngAnimate'])
             templateUrl: "partials/question.html"
         })
 }]);
+angular.module('ceb')
+.value('duScrollDuration', 1000)
+  .value('duScrollOffset', 1000)

@@ -17,6 +17,7 @@ footer {
 /*NAVBAR */
 
 .navbar-default {
+
     margin-bottom: 0px;
     background: rgb(247, 247, 247);
     /* For browsers that do not support gradients */
@@ -51,6 +52,15 @@ footer {
         box-shadow: 0px 1px 8px 0px rgba(255, 255, 255, 0.75);
     }
 }
+
+
+#sticky {
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    z-index: 1000;
+}
+
 
 
 /*TImer*/
@@ -104,15 +114,17 @@ table.time {
 }
 
 h1.section-heading {
-   font-size: 13px;
+    font-size: 13px;
     font-family: 'proxima_bold';
     letter-spacing: 1px;
     color: #ffffff;
     opacity: .5;
 }
-h1.section-heading.question{
-      color: #000000;
+
+h1.section-heading.question {
+    color: #000000;
 }
+
 
 /* Tab Button */
 
@@ -258,6 +270,7 @@ h1.section-heading.question{
     color: rgb(255, 255, 255);
     height: 44px;
     border-radius: 0px;
+    font-family: 'proxima_semibold';
     border: 0px;
     width: 100%;
     color: rgb(255, 255, 255);
@@ -293,6 +306,7 @@ h1.section-heading.question{
 .btn-ceb:active,
 .btn-ceb:focus {
     outline: none;
+    color: rgb(255, 255, 255);
 }
 
 .btn-ceb:hover {
@@ -463,24 +477,23 @@ input[type=radio]:not(old):checked + label {
         padding: 0px;
     }
 }
-.questions{
-.ng-enter {
-  -webkit-transition: .5s;
-  transition: .5s;  
-  margin-right: 80%;
+
+.questions {
+    .ng-enter {
+        -webkit-transition: .5s;
+        transition: .5s;
+        margin-right: 80%;
+    }
+    .ng-enter-active {
+        margin-right: 0px;
+    }
+    .ng-move {
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
 }
 
-.ng-enter-active {
-  margin-right: 0px;
-}
 
-.ng-move {
-  -webkit-transition: .5s;
-  transition: .5s;
-
-}
-
-}
 
 /*-------------------------------------------------
 SMACSS: LAYOUT - HEADER
@@ -507,7 +520,9 @@ header {
 /*-------------------------------------------------
 SMACSS: LAYOUT - SECTION
 -------------------------------------------------*/
-
+section{
+        margin-top: 50px;
+}
 
 /*-------------------------------------------------
 SMACSS: LAYOUT - FOOTER
