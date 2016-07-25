@@ -2,24 +2,24 @@
 Question page VIEW
  **************** -->
 <div ng-controller="questionController as ques">
-<div id="sticky-anchor"></div>
-<div id="sticky"> <div class="timer-bar" >
-        <uib-progressbar value="ques.percent">
-            <span class="sr-only">Split button!</span>
-        </uib-progressbar>
+    <div id="sticky-anchor"></div>
+    <div id="sticky">
+        <div class="timer-bar">
+            <uib-progressbar value="ques.percent">
+                <span class="sr-only">Split button!</span>
+            </uib-progressbar>
+        </div>
+        <!--  timer -->
+        <table class="time">
+            <tr>
+                <td></td>
+                <td class="fix"> <span><img src="/images/timerClock.png" alt="Clock icon"> {{ques.display}}</span></td>
+                <td></td>
+            </tr>
+        </table>
     </div>
-    <!--  timer -->
-   
-    <table class="time">
-        <tr>
-            <td></td>
-            <td class="fix"> <span><img src="/images/timerClock.png" alt="Clock icon"> {{ques.display}}</span></td>
-            <td></td>
-        </tr>
-    </table></div>
-   
     <div class="container instructions">
-        <div class="row">
+        <div class="row" ng-if="ques.test.set == 0">
             <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">
                 <div class="btn-tab-group">
                     <h1 class="section-heading">INFORMATION</h1>
@@ -90,66 +90,110 @@ Question page VIEW
                 </div>
                 <div class="table-responsive" ng-if="!ques.tab">
                     <table class="table ceb-table">
-                        <tbody>
-                            <tr>
-                                <td>Discount Starting Date</td>
-                                <td>06/01/2007</td>
-                            </tr>
-                            <tr>
-                                <td>Cash-Back Bonus Starting Date</td>
-                                <td>06/01/2007</td>
-                            </tr>
-                            <tr>
-                                <td>Today’s Date</td>
-                                <td>07/21/2007</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table ceb-table">
                         <thead>
                             <tr>
-                                <th colspan="2">Terms for Retailer Cash-Back Bonus</th>
+                                <th>Date</th>
+                                <th>Amount</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Length of program</td>
-                                <td>60 days</td>
+                                <td>12/05/2007</td>
+                                <td>$310.12</td>
                             </tr>
                             <tr>
-                                <td>Minimum required purchase</td>
-                                <td>$100.00</td>
+                                <td>09/06/2007</td>
+                                <td>$278.45</td>
                             </tr>
                             <tr>
-                                <td>Retail discount rate</td>
-                                <td>0.25%</td>
+                                <td>22/06/2007</td>
+                                <td>$55.75</td>
                             </tr>
                         </tbody>
                     </table>
-                    <table class="table ceb-table">
+                     <table class="table ceb-table">
                         <thead>
                             <tr>
-                                <th colspan="2">Terms for Retailer Discount</th>
+                                <th>Date</th>
+                                <th>Amount</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Length of program</td>
-                                <td>60 days</td>
+                                <td>03/07/2007</td>
+                                <td>$98.15</td>
                             </tr>
                             <tr>
-                                <td>Minimum required purchase</td>
-                                <td>$200.00</td>
+                                <td>10/07/2007</td>
+                                <td>$115.35</td>
                             </tr>
                             <tr>
-                                <td>Retail discount rate</td>
-                                <td>0.5%</td>
+                                <td>20/07/2007</td>
+                                <td>$34.25</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
+<!-- info set 1 ends  -->
+
+ <div class="row" ng-if="ques.test.set == 1">
+            <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">
+                <div class="btn-tab-group">
+                    <h1 class="section-heading">INFORMATION</h1>
+                    <div class="text">Coding Commercial Transactions</div>
+                </div>
+               
+                <div class="table-responsive">
+                   
+                    <table class="table ceb-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                 <th>Silver</th>
+                                  <th>Gold</th>
+                                   <th>Platinum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Account</td>
+                                <td>SA</td>
+                                  <td>GA</td>
+                                    <td>PA</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Limit</td>
+                                <td>CL-10</td>
+                                 <td>CL-25</td>
+                                    <td>CL-50</td>
+                            </tr>
+                            <tr>
+                                <td>Overdraft Fee</td>
+                                <td>OD-25</td>
+                                 <td>OD-50</td>
+                                  <td>OD-75</td>
+                            </tr>
+                             <tr>
+                                <td>Insurance</td>
+                                <td>DL</td>
+                                 <td>DLP</td>
+                                  <td>DLPJ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
     </div>
     <!-- container -->
     <div class="white-div">
@@ -187,7 +231,7 @@ Question page VIEW
                     <span class="ceb-progress-dot active"></span>
                     <span class="ceb-progress-dot active"></span>
                     <span class="ceb-progress-dot active"></span>
-                    <span class="ceb-question-status pull-right">{{ques.currnetQuestionIndex+1}} of {{ques.totalQuestions}}</span>
+                    <span class="ceb-question-status pull-right">{{ques.currnetQuestionIndex+1}} of {{ques.sectionQuestions}}</span>
                     <span class="ceb-progress-dot margin-left-10 pull-right"></span>
                     <uib-progressbar class="progress-striped" value="ques.questionProgressPercent" type="warning"></uib-progressbar>
                 </div>

@@ -130,6 +130,13 @@ h1.section-heading.question {
 
 .btn-tab-group {
     padding: 5px 10px 10px;
+
+    .text{
+    font-family: 'proxima_regular';
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    }
 }
 
 .btn-tab {
@@ -478,7 +485,7 @@ input[type=radio]:not(old):checked + label {
     }
 }
 
-.questions {
+.questions,.instructions {
     .ng-enter {
         -webkit-transition: .5s;
         transition: .5s;

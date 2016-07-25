@@ -29,28 +29,40 @@ function questionController($scope, $http, $log,$document) {
         vm.open = false;
     }
 
-    $http.get("images/data/data.json")
+    $http.get("images/data/testdata.json")
         .then(function(response) {
 
             vm.test = response.data;
+            vm.test.set = 0;
+            vm.test.questions = vm.test.sets[0].questions;
             vm.test.currentQuestion = vm.test.questions[0];
-            vm.totalQuestions = vm.test.questions.length;
+            vm.sectionQuestions = vm.test.questions.length;
             vm.currnetQuestionIndex = 0;
             console.log(vm.test);
                     calcQuestioPercent();
         });
 
     vm.showNextQuestion = function() {
-        if (vm.currnetQuestionIndex < vm.totalQuestions-1) {
+
+        if (vm.currnetQuestionIndex < vm.sectionQuestions-1) {
             vm.currnetQuestionIndex += 1;
             vm.test.currentQuestion = vm.test.questions[vm.currnetQuestionIndex];
+        } else if((vm.currnetQuestionIndex < vm.sectionQuestions-1) ||  vm.test.set == 0
+
+){
+vm.test.set = 1;
+            vm.test.questions = vm.test.sets[1].questions;
+            vm.test.currentQuestion = vm.test.questions[0];
+            vm.sectionQuestions = vm.test.questions.length;
+            vm.currnetQuestionIndex = 0;
+                    calcQuestioPercent();
         }
         calcQuestioPercent();
-         $document.scrollToElementAnimated(someElement);
+        $document.scrollToElementAnimated(someElement);
     }
 
      function calcQuestioPercent(){
-        vm.questionProgressPercent =  ((vm.currnetQuestionIndex )*100)/vm.totalQuestions; 
+        vm.questionProgressPercent =  ((vm.currnetQuestionIndex )*100)/vm.sectionQuestions; 
 
 
      }

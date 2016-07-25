@@ -6644,6 +6644,11 @@ h1.section-heading.question {
 /* Tab Button */
 .btn-tab-group {
   padding: 5px 10px 10px; }
+  .btn-tab-group .text {
+    font-family: 'proxima_regular';
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff; }
 
 .btn-tab {
   color: white;
@@ -6930,15 +6935,15 @@ input[type=radio]:not(old):checked + label {
   .ceb-question-progressbar .row > div {
     padding: 0px; }
 
-.questions .ng-enter {
+.questions .ng-enter, .instructions .ng-enter {
   -webkit-transition: .5s;
   transition: .5s;
   margin-right: 80%; }
 
-.questions .ng-enter-active {
+.questions .ng-enter-active, .instructions .ng-enter-active {
   margin-right: 0px; }
 
-.questions .ng-move {
+.questions .ng-move, .instructions .ng-move {
   -webkit-transition: .5s;
   transition: .5s; }
 
