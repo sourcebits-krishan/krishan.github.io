@@ -13,22 +13,23 @@ Question page VIEW
         <table class="time">
             <tr>
                 <td></td>
-                <td class="fix"> <span><img src="/images/timerClock.png" alt="Clock icon"> {{ques.display}}</span></td>
+                <td class="fix"> <span><img src="/images/timerClock.png" alt="Clock icon"> {{ques.display}}</span></td> 
                 <td></td>
             </tr>
         </table>
     </div>
     <div class="container instructions">
         <div class="row" ng-if="ques.test.set == 0">
-            <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">
-                <div class="btn-tab-group">
-                    <h1 class="section-heading">INFORMATION</h1>
-                    <div class="btn-group btn-group-justified">
+            <div class="width-500">
+ 
+                    <h1 class="section-heading instruction">INFORMATION</h1>
+                    <div class="btn-group-container"> <div class="btn-group btn-group-justified">
                         <a href="#" class="btn btn-tab" ng-class="{'active': ques.tab}" ng-click="ques.tab = true">Retail Promotion Inquiry</a>
                         <a href="#" class="btn  btn-tab" ng-class="{'active': !ques.tab}" ng-click="ques.tab = false">Past Transactions</a>
-                    </div>
-                </div>
-                <div class="table-responsive" ng-if="ques.tab">
+                    </div></div>
+                   
+ 
+                <div ng-if="ques.tab">
                     <table class="table ceb-table">
                         <tbody>
                             <tr>
@@ -88,7 +89,7 @@ Question page VIEW
                         </tbody>
                     </table>
                 </div>
-                <div class="table-responsive" ng-if="!ques.tab">
+                <div ng-if="!ques.tab">
                     <table class="table ceb-table">
                         <thead>
                             <tr>
@@ -111,7 +112,7 @@ Question page VIEW
                             </tr>
                         </tbody>
                     </table>
-                     <table class="table ceb-table">
+                    <table class="table ceb-table">
                         <thead>
                             <tr>
                                 <th>Date</th>
@@ -136,70 +137,60 @@ Question page VIEW
                 </div>
             </div>
         </div>
-<!-- info set 1 ends  -->
-
- <div class="row" ng-if="ques.test.set == 1">
-            <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">
-                <div class="btn-tab-group">
-                    <h1 class="section-heading">INFORMATION</h1>
+        <!-- info set 1 ends  -->
+        <div class="row" ng-if="ques.test.set == 1">
+            <div class="width-500">
+              <h1 class="section-heading instruction">INFORMATION</h1>
+                <div class="btn-group-container">
+                
                     <div class="text">Coding Commercial Transactions</div>
                 </div>
-               
-                <div class="table-responsive">
-                   
+                <div>
                     <table class="table ceb-table">
                         <thead>
                             <tr>
                                 <th></th>
-                                 <th>Silver</th>
-                                  <th>Gold</th>
-                                   <th>Platinum</th>
+                                <th>Silver</th>
+                                <th>Gold</th>
+                                <th>Platinum</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Account</td>
                                 <td>SA</td>
-                                  <td>GA</td>
-                                    <td>PA</td>
+                                <td>GA</td>
+                                <td>PA</td>
                             </tr>
                             <tr>
                                 <td>Credit Limit</td>
                                 <td>CL-10</td>
-                                 <td>CL-25</td>
-                                    <td>CL-50</td>
+                                <td>CL-25</td>
+                                <td>CL-50</td>
                             </tr>
                             <tr>
                                 <td>Overdraft Fee</td>
                                 <td>OD-25</td>
-                                 <td>OD-50</td>
-                                  <td>OD-75</td>
+                                <td>OD-50</td>
+                                <td>OD-75</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <td>Insurance</td>
                                 <td>DL</td>
-                                 <td>DLP</td>
-                                  <td>DLPJ</td>
+                                <td>DLP</td>
+                                <td>DLPJ</td>
                             </tr>
                         </tbody>
                     </table>
-                 
                 </div>
-
             </div>
         </div>
-
-
-
-
-
-
     </div>
     <!-- container -->
     <div class="white-div">
         <div class="container questions">
             <div class="row">
-                <div class="col-sm-offset-2  col-sm-8 col-md-offset-3  col-md-6">
+                <div class="width-500">
                     <div class="question-heading-group">
                         <h1 class="section-heading question">QUESTION</h1>
                         <p class="ceb-question">{{ques.test.currentQuestion.question}}</p>
@@ -227,13 +218,13 @@ Question page VIEW
 ">
         <div class="container">
             <div class="row">
-                <div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+                <div class="width-500 ">
                     <span class="ceb-progress-dot active"></span>
                     <span class="ceb-progress-dot active"></span>
                     <span class="ceb-progress-dot active"></span>
                     <span class="ceb-question-status pull-right">{{ques.currnetQuestionIndex+1}} of {{ques.sectionQuestions}}</span>
                     <span class="ceb-progress-dot margin-left-10 pull-right"></span>
-                    <uib-progressbar class="progress-striped" value="ques.questionProgressPercent" type="warning"></uib-progressbar>
+                    <uib-progressbar class="progress-striped" value="ques.questionProgressPercent" type="success"></uib-progressbar>
                 </div>
             </div>
         </div>

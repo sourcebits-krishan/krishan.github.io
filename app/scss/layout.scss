@@ -13,11 +13,16 @@ footer {
     margin: 50px auto;
 }
 
+.width-500 {
+    max-width: 500px;
+    margin: auto;
+}
+
+
 
 /*NAVBAR */
 
 .navbar-default {
-
     margin-bottom: 0px;
     background: rgb(247, 247, 247);
     /* For browsers that do not support gradients */
@@ -53,14 +58,12 @@ footer {
     }
 }
 
-
 #sticky {
     width: 100%;
     position: fixed;
     top: 50px;
     z-index: 1000;
 }
-
 
 
 /*TImer*/
@@ -101,6 +104,9 @@ table.time {
         background-image: url(/images/timerLeft.png), url(/images/timerRight.png);
         background-position: left bottom, right bottom;
         background-repeat: no-repeat, no-repeat;
+        img {
+            margin-top: -2px;
+        }
     }
 }
 
@@ -120,24 +126,29 @@ h1.section-heading {
     color: #ffffff;
     opacity: .5;
 }
+h1.section-heading.instruction {
+    padding-left: 10px;
+      padding-top: 10px;
 
+}
 h1.section-heading.question {
     color: #000000;
 }
 
 
 /* Tab Button */
+.btn-group-container{
+    padding-left:10px;
+    padding-right: 10px;  
 
-.btn-tab-group {
-    padding: 5px 10px 10px;
-
-    .text{
-    font-family: 'proxima_regular';
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
+      .text {
+        font-family: 'proxima_regular';
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
     }
 }
+
 
 .btn-tab {
     color: rgb(255, 255, 255);
@@ -166,9 +177,9 @@ h1.section-heading.question {
     margin-top: 10px;
     thead > tr {
         font-family: 'proxima_semibold';
-        background-color: rgba(128, 128, 128, 1);
+        background-color: #6F6F74;
         th:nth-child(even) {
-            background-color: #626267;
+            background-color: #76767B;
             width: 100px;
         }
     }
@@ -212,7 +223,16 @@ h1.section-heading.question {
     padding-bottom: 50px;
     font-size: 16px;
 }
-
+.questions>.row {
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    .width-500 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+    
 .ceb-options {
     font-size: 16px;
     height: 60px;
@@ -395,6 +415,33 @@ h1.section-heading.question {
     }
 }
 
+@media (max-width: 499px) {
+.btn-group-container{
+    padding-left:0px;
+    padding-right:0px;
+    .btn-group-justified .btn{
+    font-size: 14px ;
+}
+
+}
+    .width-500 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .btn-tab-group {
+        padding: 5px;
+    }
+    .questions>.row {
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        .width-500 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+
 
 /*
 
@@ -446,16 +493,16 @@ input[type=radio]:not(old):checked + label {
         border-radius: 30px;
         border-style: inset;
         background-image: linear-gradient(to bottom, #dcdcdc, #e5e5e5);
-        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75), inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-        border: solid 1px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75), inset 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
-    .progress-bar-warning {
+    .progress-bar-success {
         border-radius: 30px;
         background-size: 15px 15px;
         background-color: rgb(0, 173, 238);
         background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
         background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
         background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+        box-shadow: inset 0 -1px 4px rgba(255, 255, 255, 0.3), inset 0 -2px 4px rgba(0, 0, 0, 0.3);
     }
     .ceb-question-status {
         color: rgb(0, 173, 238);
@@ -471,7 +518,7 @@ input[type=radio]:not(old):checked + label {
         margin-right: 10px;
         border-radius: 30px;
         background-image: linear-gradient(to bottom, #dcdcdc, #e5e5e5);
-        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75), inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75), inset 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
     .ceb-progress-dot.active {
         background: linear-gradient(#00c8f3, #0097f3);
@@ -485,7 +532,8 @@ input[type=radio]:not(old):checked + label {
     }
 }
 
-.questions,.instructions {
+.questions,
+.instructions {
     .ng-enter {
         -webkit-transition: .5s;
         transition: .5s;
@@ -499,7 +547,6 @@ input[type=radio]:not(old):checked + label {
         transition: .5s;
     }
 }
-
 
 
 /*-------------------------------------------------
@@ -527,9 +574,11 @@ header {
 /*-------------------------------------------------
 SMACSS: LAYOUT - SECTION
 -------------------------------------------------*/
-section{
-        margin-top: 50px;
+
+section {
+    margin-top: 50px;
 }
+
 
 /*-------------------------------------------------
 SMACSS: LAYOUT - FOOTER
