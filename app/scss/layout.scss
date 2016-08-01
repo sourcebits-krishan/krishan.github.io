@@ -3,7 +3,7 @@ SMACSS: LAYOUT - COMMON
 -------------------------------------------------*/
 
 body {
-    background-color: rgb(35, 35, 43);
+    background-color: #fff;
     font-family: 'proxima_regular';
 }
 
@@ -114,7 +114,11 @@ table.time {
     opacity: .2;
     pointer-events: none;
 }
-
+.instructions-wrapper{
+    
+    width: 100%;
+    background-color: rgb(35, 35, 43);  
+}
 .container.instructions {
     font-size: 16px;
 }

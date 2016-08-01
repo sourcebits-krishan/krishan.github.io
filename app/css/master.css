@@ -6544,7 +6544,7 @@ button.close {
 SMACSS: LAYOUT - COMMON
 -------------------------------------------------*/
 body {
-  background-color: #23232b;
+  background-color: #fff;
   font-family: 'proxima_regular'; }
 
 header,
@@ -6633,6 +6633,10 @@ table.time {
 .container.fadein .row {
   opacity: .2;
   pointer-events: none; }
+
+.instructions-wrapper {
+  width: 100%;
+  background-color: #23232b; }
 
 .container.instructions {
   font-size: 16px; }
