@@ -6695,12 +6695,12 @@ h1.section-heading.question {
     background-color: #6F6F74; }
     .table thead > tr th:nth-child(even) {
       background-color: #76767B;
-      width: 100px; }
+      min-width: 100px; }
   .table tbody > tr:nth-child(odd) {
     background-color: #2E2E35; }
     .table tbody > tr:nth-child(odd) td:nth-child(even) {
       background-color: #38383F;
-      width: 100px; }
+      min-width: 100px; }
   .table tbody > tr:nth-child(even) {
     background-color: #43434A; }
     .table tbody > tr:nth-child(even) td:nth-child(even) {
@@ -6749,7 +6749,8 @@ h1.section-heading.question {
   -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); }
   .ceb-options .option-text {
-    float: left; }
+    float: left;
+    max-width: 85%; }
 
 .ceb-options.active {
   color: white;
@@ -6973,13 +6974,14 @@ input[type=radio]:not(old):checked + label {
     width: 10px;
     height: 10px;
     /* display: table-row; */
-    float: left;
+    float: right;
     margin-right: 10px;
     border-radius: 30px;
     background-image: linear-gradient(to bottom, #dcdcdc, #e5e5e5);
     box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75), inset 0 1px 2px 0 rgba(0, 0, 0, 0.2); }
   .ceb-question-progressbar .ceb-progress-dot.completed {
-    background: linear-gradient(#00c8f3, #0097f3); }
+    background: linear-gradient(#00c8f3, #0097f3);
+    float: left; }
   .ceb-question-progressbar .margin-left-10 {
     margin-right: 0px;
     margin-left: 10px; }

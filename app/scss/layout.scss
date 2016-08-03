@@ -191,14 +191,14 @@ h1.section-heading.question {
         background-color: #6F6F74;
         th:nth-child(even) {
             background-color: #76767B;
-            width: 100px;
+            min-width: 100px;
         }
     }
     tbody > tr:nth-child(odd) {
         background-color: #2E2E35;
         td:nth-child(even) {
             background-color: #38383F;
-            width: 100px;
+            min-width: 100px;
         }
     }
     tbody > tr:nth-child(even) {
@@ -267,6 +267,7 @@ h1.section-heading.question {
 
     .option-text{
         float: left;
+        max-width:85%
     }
 }
 
@@ -533,7 +534,7 @@ input[type=radio]:not(old):checked + label {
         width: 10px;
         height: 10px;
         /* display: table-row; */
-        float: left;
+        float: right;
         margin-right: 10px;
         border-radius: 30px;
         background-image: linear-gradient(to bottom, #dcdcdc, #e5e5e5);
@@ -541,6 +542,7 @@ input[type=radio]:not(old):checked + label {
     }
     .ceb-progress-dot.completed {
         background: linear-gradient(#00c8f3, #0097f3);
+        float:left;
     }
     .margin-left-10 {
         margin-right: 0px;
