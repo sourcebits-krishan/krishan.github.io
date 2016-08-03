@@ -6637,6 +6637,10 @@ table.time {
 .instructions-wrapper {
   width: 100%;
   background-color: #23232b; }
+  .instructions-wrapper .instructions p {
+    color: white;
+    margin: 20px auto;
+    line-height: 1.25; }
 
 .container.instructions {
   font-size: 16px; }
@@ -6659,7 +6663,7 @@ h1.section-heading.question {
 .btn-group-container {
   padding-left: 10px;
   padding-right: 10px; }
-  .btn-group-container .text {
+  .btn-group-container .instruction-heading {
     font-family: 'proxima_regular';
     font-size: 16px;
     font-weight: 600;
@@ -6708,7 +6712,8 @@ h1.section-heading.question {
   .table tbody > tr > td,
   .table tfoot > tr > td {
     border: none;
-    color: #FBFBFB; }
+    color: #FBFBFB;
+    padding: 4px 10px; }
 
 @media screen and (max-width: 768px) {
   .table-responsive {
@@ -6743,6 +6748,8 @@ h1.section-heading.question {
   -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); }
+  .ceb-options .option-text {
+    float: left; }
 
 .ceb-options.active {
   color: white;
@@ -6883,6 +6890,8 @@ h1.section-heading.question {
     margin-left: 0px; } }
 
 @media (max-width: 499px) {
+  .btn-group-justified {
+    display: initial; }
   .btn-group-container {
     padding-left: 0px;
     padding-right: 0px; }
@@ -6969,7 +6978,7 @@ input[type=radio]:not(old):checked + label {
     border-radius: 30px;
     background-image: linear-gradient(to bottom, #dcdcdc, #e5e5e5);
     box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75), inset 0 1px 2px 0 rgba(0, 0, 0, 0.2); }
-  .ceb-question-progressbar .ceb-progress-dot.active {
+  .ceb-question-progressbar .ceb-progress-dot.completed {
     background: linear-gradient(#00c8f3, #0097f3); }
   .ceb-question-progressbar .margin-left-10 {
     margin-right: 0px;

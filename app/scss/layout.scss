@@ -19,7 +19,6 @@ footer {
 }
 
 
-
 /*NAVBAR */
 
 .navbar-default {
@@ -114,11 +113,19 @@ table.time {
     opacity: .2;
     pointer-events: none;
 }
-.instructions-wrapper{
-    
+
+.instructions-wrapper {
     width: 100%;
-    background-color: rgb(35, 35, 43);  
+    background-color: rgb(35, 35, 43);
+    .instructions {
+        p {
+            color: white;
+            margin: 20px auto;
+            line-height: 1.25;
+        }
+    }
 }
+
 .container.instructions {
     font-size: 16px;
 }
@@ -130,29 +137,29 @@ h1.section-heading {
     color: #ffffff;
     opacity: .5;
 }
+
 h1.section-heading.instruction {
     padding-left: 10px;
-      padding-top: 10px;
-
+    padding-top: 10px;
 }
+
 h1.section-heading.question {
     color: #000000;
 }
 
 
 /* Tab Button */
-.btn-group-container{
-    padding-left:10px;
-    padding-right: 10px;  
 
-      .text {
+.btn-group-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    .instruction-heading {
         font-family: 'proxima_regular';
         font-size: 16px;
         font-weight: 600;
         color: #ffffff;
     }
 }
-
 
 .btn-tab {
     color: rgb(255, 255, 255);
@@ -208,6 +215,7 @@ h1.section-heading.question {
     tfoot > tr > td {
         border: none;
         color: #FBFBFB;
+        padding: 4px 10px;
     }
 }
 
@@ -227,6 +235,7 @@ h1.section-heading.question {
     padding-bottom: 50px;
     font-size: 16px;
 }
+
 .questions>.row {
     margin: 0px;
     padding-left: 0px;
@@ -236,7 +245,7 @@ h1.section-heading.question {
         padding-right: 10px;
     }
 }
-    
+
 .ceb-options {
     font-size: 16px;
     height: 60px;
@@ -255,6 +264,10 @@ h1.section-heading.question {
     -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
     -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+
+    .option-text{
+        float: left;
+    }
 }
 
 .ceb-options.active {
@@ -420,14 +433,16 @@ h1.section-heading.question {
 }
 
 @media (max-width: 499px) {
-.btn-group-container{
-    padding-left:0px;
-    padding-right:0px;
-    .btn-group-justified .btn{
-    font-size: 14px ;
-}
-
-}
+    .btn-group-justified {
+        display: initial;
+    }
+    .btn-group-container {
+        padding-left: 0px;
+        padding-right: 0px;
+        .btn-group-justified .btn {
+            font-size: 14px;
+        }
+    }
     .width-500 {
         padding-left: 5px;
         padding-right: 5px;
@@ -524,7 +539,7 @@ input[type=radio]:not(old):checked + label {
         background-image: linear-gradient(to bottom, #dcdcdc, #e5e5e5);
         box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75), inset 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
-    .ceb-progress-dot.active {
+    .ceb-progress-dot.completed {
         background: linear-gradient(#00c8f3, #0097f3);
     }
     .margin-left-10 {

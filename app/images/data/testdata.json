@@ -1,17 +1,181 @@
 {
 
-        "totalQuestions": 8,
-        "sets":[ {
-            "questions": [
+    "totalQuestions": 18,
+    "sets": [
 
-                 {
-                    "question": "How many customer transactions are eligible for the Retailer Cash-Back Bonus in June?",
-                    "options": [{
+      {
+        "questions": [{
+                "question": "What is the correct sequence of codes for a GLD customer deposit of $1,390.00?",
+                "options": [{
+                    "option": "GLD, 1390, A, S",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "GLD, 1390, A, D",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, W, S, R, 1390",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, W, S, 1390",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 1390, S",
+                    "isCorrect": "No"
+                }]
+            },
+
+            {
+                "question": "What is the correct sequence of codes for a PAS customer withdrawal of $1,330.00?",
+                "options": [{
+                    "option": "PAS, 1330, W, G",
+                    "isCorrect": "No"
+                }, {
+                    "option": "PAS, 1330, A",
+                    "isCorrect": "No"
+                }, {
+                    "option": "PAS, 1330, W, S",
+                    "isCorrect": "No"
+                }, {
+                    "option": "PAS, 1330, W",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "PAS, 1330, A, D",
+                    "isCorrect": "No"
+                }]
+
+
+            },
+
+            {
+                "question": "What is the correct sequence of codes for a GLD customer deposit of $980.00?",
+                "options": [{
+                    "option": "GLD, 980, A, H",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 980, A, S",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 980, W",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 980, S",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 980, A",
+                    "isCorrect": "Yes"
+                }]
+            },
+
+            {
+                "question": "What is the correct sequence of codes for a GLD customer deposit of $1,350.00?",
+                "options": [{
+                    "option": "GLD, 1350, A",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 1350, A, S",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "GLD, 1350, W, A",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 1350, A, D",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 1350, W, D",
+                    "isCorrect": "No"
+                }]
+            }, {
+                "question": "What is the correct sequence of codes for a GLD customer withdrawal of $1,698.00?",
+                "options": [{
+                    "option": "GLD, 1698, D",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 1698, W, G",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 1698, W",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "GLD, 1698, W, S",
+                    "isCorrect": "No"
+                }, {
+                    "option": "GLD, 1698, S, D",
+                    "isCorrect": "No"
+                }]
+            }
+        ]
+
+
+    }, 
+
+
+
+
+    {
+        "questions": [
+
+            {
+                "question": "How many customer transactions are eligible for the Retailer Cash-Back Bonus in June?",
+                "options": [{
+                    "option": 0,
+                    "isCorrect": "No"
+                }, {
+                    "option": 1,
+                    "isCorrect": "Yes"
+                }, {
+                    "option": 2,
+                    "isCorrect": "No"
+                }, {
+                    "option": 3,
+                    "isCorrect": "No"
+                }, {
+                    "option": 4,
+                    "isCorrect": "No"
+                }]
+            }, {
+                "question": "The Retailer Discount and Retailer Cash-Back Bonus have a limited program length.  For which of the following dates would the discounts not apply?",
+                "options": [{
+                    "option": "06/03/2007",
+                    "isCorrect": "No"
+                }, {
+                    "option": "06/13/2007",
+                    "isCorrect": "No"
+                }, {
+                    "option": "07/01/2007",
+                    "isCorrect": "No"
+                }, {
+                    "option": "07/13/2007",
+                    "isCorrect": "No"
+                }, {
+                    "option": "12/21/2007",
+                    "isCorrect": "Yes"
+                }]
+            }, {
+                "question": "How many customer transactions are eligible for both the Retailer Discount and Cash-Back Bonus in June?",
+                "options": [{
+                    "option": 0,
+                    "isCorrect": "No"
+                }, {
+                    "option": 1,
+                    "isCorrect": "Yes"
+                }, {
+                    "option": 2,
+                    "isCorrect": "No"
+                }, {
+                    "option": 3,
+                    "isCorrect": "No"
+                }, {
+                    "option": 4,
+                    "isCorrect": "No"
+                }]
+            }, {
+                "question": "How many customer transactions are eligible for the Retailer Discount in July?",
+                "options": [{
                         "option": 0,
-                        "isCorrect": "No"
+                        "isCorrect": "Yes"
                     }, {
                         "option": 1,
-                        "isCorrect": "Yes"
+                        "isCorrect": "No"
                     }, {
                         "option": 2,
                         "isCorrect": "No"
@@ -21,154 +185,215 @@
                     }, {
                         "option": 4,
                         "isCorrect": "No"
-                    }]
+                    }
+
+                ]
+            }
+        ]
+    },
+
+
+
+
+     {
+        "questions": [{
+                "question": "What is the total number of calls regarding sending late payment notice?",
+                "options": [{
+                    "option": 0,
+                    "isCorrect": "No"
                 }, {
-                    "question": "The Retailer Discount and Retailer Cash-Back Bonus have a limited program length.  For which of the following dates would the discounts not apply?",
-                    "options": [{
-                        "option": "03/06/2007",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "13/06/2007",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "01/07/2007",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "13/07/2007",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "21/12/2007",
-                        "isCorrect": "Yes"
-                    }]
+                    "option": 1,
+                    "isCorrect": "No"
                 }, {
-                    "question": "How many customer transactions are eligible for both the Retailer Discount and Cash-Back Bonus in June?",
-                    "options": [{
-                        "option": 0,
-                        "isCorrect": "No"
-                    }, {
-                        "option": 1,
-                        "isCorrect": "Yes"
-                    }, {
-                        "option": 2,
-                        "isCorrect": "No"
-                    }, {
-                        "option": 3,
-                        "isCorrect": "No"
-                    }, {
-                        "option": 4,
-                        "isCorrect": "No"
-                    }]
+                    "option": 2,
+                    "isCorrect": "Yes"
                 }, {
-                    "question": "How many customer transactions are eligible for the Retailer Discount in July?",
-                    "options": [{
-                            "option": 0,
-                            "isCorrect": "Yes"
-                        }, {
-                            "option": 1,
-                            "isCorrect": "No"
-                        }, {
-                            "option": 2,
-                            "isCorrect": "No"
-                        }, {
-                            "option": 3,
-                            "isCorrect": "No"
-                        }, {
-                            "option": 4,
-                            "isCorrect": "No"
-                        }
-
-                    ]
-                }
-            ]
-        },
-        {
-            "questions": [{
-                    "question": "To what type of account(s) does CL-50 belong?",
-                    "options": [{
-                        "option": "Platinum",
-                        "isCorrect": "Yes"
-                    }, {
-                        "option": "Gold",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Silver",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Gold and Silver",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Platinum and Gold",
-                        "isCorrect": "No"
-                    }]
-                },
+                    "option": 3,
+                    "isCorrect": "No"
+                }, {
+                    "option": 4,
+                    "isCorrect": "No"
+                }]
+            },
 
 
-                {
-                    "question": "To what type of account(s) does PA belong?",
-                    "options": [{
-                        "option": "Platinum",
-                        "isCorrect": "Yes"
-                    }, {
-                        "option": "Gold",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Silver",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Gold and Silver",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Platinum and Gold",
-                        "isCorrect": "No"
-                    }]
-                },
-
-                {
-                    "question": "To what type of account(s) does DL belong?",
-                    "options": [{
-                        "option": "Platinum",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Gold",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Silver",
-                        "isCorrect": "Yes"
-                    }, {
-                        "option": "Gold and Silver",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Platinum and Gold",
-                        "isCorrect": "No"
-                    }]
-                },
-
-
-                {
-                    "question": "Company XYZ has an insurance code of DL. What type of account and credit limit codes does it have?",
-                    "options": [{
-                        "option": "PA, CL-50",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Gold, CL-25",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "Platinum, CL-10",
-                        "isCorrect": "No"
-                    }, {
-                        "option": "SA, CL-10",
-                        "isCorrect": "Yes"
-                    }, {
-                        "option": "Silver, CL-25",
-                        "isCorrect": "No"
-                    }]
-                }
-
-            ]
-
-        }]
+            {
+                "question": "What is the total number of calls where a supervisor was requested?",
+                "options": [{
+                    "option": 0,
+                    "isCorrect": "No"
+                }, {
+                    "option": 1,
+                    "isCorrect": "No"
+                }, {
+                    "option": 2,
+                    "isCorrect": "Yes"
+                }, {
+                    "option": 3,
+                    "isCorrect": "No"
+                }, {
+                    "option": 4,
+                    "isCorrect": "No"
+                }]
+            },
 
 
 
-    }
+            {
+                "question": "What is written in the March 17, 2007 memo?",
+                "options": [{
+                    "option": "Customer call, request for account balance, will make payment in five days",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Send late payment notice, account past due courtesy call, unanswered telephone call",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Customer call, dispute late payment, request for account balance",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Account past due courtesy call, dispute late payment, requested supervisor",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Customer call, dispute late payment, will make payment in five days, requested supervisor",
+                    "isCorrect": "Yes"
+                }]
+            },
 
+
+            {
+                "question": "What is different about the March 2 and May 22 memos?",
+                "options": [{
+                    "option": "One involved a late payment dispute and the other a send late payment notice.",
+                    "isCorrect": "No"
+                }, {
+                    "option": "One was a customer call and the other a late payment courtesy call.",
+                    "isCorrect": "No"
+                }, {
+                    "option": "One involved a change of address and the other an unanswered telephone call.",
+                    "isCorrect": "No"
+                }, {
+                    "option": "One involved an unanswered telephone call and the other a telephone number that does not exist.",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "One involved a sales call and the other a payment dispute.",
+                    "isCorrect": "No"
+                }]
+            },
+
+
+            {
+                "question": "What is different about the January 20 and May 1 memos?",
+                "options": [{
+                    "option": "One involved a late payment dispute and the other a send late payment notice.",
+                    "isCorrect": "No"
+                }, {
+                    "option": "One involved a sales call and the other a late payment dispute.",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "One involved a late payment dispute and the other a change of address.",
+                    "isCorrect": "No"
+                }, {
+                    "option": "One involved a sales call and the other an unanswered telephone call.",
+                    "isCorrect": "No"
+                }, {
+                    "option": "One was a customer call and the other a late payment courtesy call.",
+                    "isCorrect": "No"
+                }]
+            }
+
+        ]
+
+    },
+
+
+
+     {
+        "questions": [{
+                "question": "To what type of account(s) does CL-50 belong?",
+                "options": [{
+                    "option": "Platinum",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "Gold",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Silver",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Gold and Silver",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Platinum and Gold",
+                    "isCorrect": "No"
+                }]
+            },
+
+
+            {
+                "question": "To what type of account(s) does PA belong?",
+                "options": [{
+                    "option": "Platinum",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "Gold",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Silver",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Gold and Silver",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Platinum and Gold",
+                    "isCorrect": "No"
+                }]
+            },
+
+            {
+                "question": "To what type of account(s) does DL belong?",
+                "options": [{
+                    "option": "Platinum",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Gold",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Silver",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "Gold and Silver",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Platinum and Gold",
+                    "isCorrect": "No"
+                }]
+            },
+
+
+            {
+                "question": "Company XYZ has an insurance code of DL. What type of account and credit limit codes does it have?",
+                "options": [{
+                    "option": "PA, CL-50",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Gold, CL-25",
+                    "isCorrect": "No"
+                }, {
+                    "option": "Platinum, CL-10",
+                    "isCorrect": "No"
+                }, {
+                    "option": "SA, CL-10",
+                    "isCorrect": "Yes"
+                }, {
+                    "option": "Silver, CL-25",
+                    "isCorrect": "No"
+                }]
+            }
+
+        ]
+
+    }]
+
+
+
+}

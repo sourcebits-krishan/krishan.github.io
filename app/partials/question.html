@@ -13,182 +13,349 @@ Question page VIEW
         <table class="time">
             <tr>
                 <td></td>
-                <td class="fix"> <span><img src="/images/timerClock.png" alt="Clock icon"> {{ques.display}}</span></td> 
+                <td class="fix"> <span><img src="/images/timerClock.png" alt="Clock icon"> {{ques.display}}</span></td>
                 <td></td>
             </tr>
         </table>
     </div>
     <div class="instructions-wrapper">
-    <div class="container instructions">
-        <div class="row" ng-if="ques.test.set == 0">
-            <div class="width-500">
- 
+        <div class="container instructions">
+           
+            <!-- info set 1 ends  -->
+            <div class="row" ng-if="ques.test.set == 1">
+                <div class="width-500">
                     <h1 class="section-heading instruction">INFORMATION</h1>
-                    <div class="btn-group-container"> <div class="btn-group btn-group-justified">
-                        <a href="#" class="btn btn-tab" ng-class="{'active': ques.tab}" ng-click="ques.tab = true">Retail Promotion Inquiry</a>
-                        <a href="#" class="btn  btn-tab" ng-class="{'active': !ques.tab}" ng-click="ques.tab = false">Past Transactions</a>
-                    </div></div>
-                   
- 
-                <div ng-if="ques.tab">
-                    <table class="table ceb-table">
-                        <tbody>
-                            <tr>
-                                <td>Discount Starting Date</td>
-                                <td>06/01/2007</td>
-                            </tr>
-                            <tr>
-                                <td>Cash-Back Bonus Starting Date</td>
-                                <td>06/01/2007</td>
-                            </tr>
-                            <tr>
-                                <td>Today’s Date</td>
-                                <td>07/21/2007</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table ceb-table">
-                        <thead>
-                            <tr>
-                                <th colspan="2">Terms for Retailer Discount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Length of program</td>
-                                <td>60 days</td>
-                            </tr>
-                            <tr>
-                                <td>Minimum required purchase</td>
-                                <td>$200.00</td>
-                            </tr>
-                            <tr>
-                                <td>Retail discount rate</td>
-                                <td>0.5%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table ceb-table">
-                        <thead>
-                            <tr>
-                                <th colspan="2">Terms for Retailer Cash-Back Bonus</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Length of program</td>
-                                <td>60 days</td>
-                            </tr>
-                            <tr>
-                                <td>Minimum required purchase</td>
-                                <td>$100.00</td>
-                            </tr>
-                            <tr>
-                                <td>Retail discount rate</td>
-                                <td>0.25%</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="btn-group-container">
+                        <div class="instruction-heading">Coding Commercial Transactions</div>
+                    </div>
+                    <div>
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Silver</th>
+                                    <th>Gold</th>
+                                    <th>Platinum</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Account</td>
+                                    <td>SA</td>
+                                    <td>GA</td>
+                                    <td>PA</td>
+                                </tr>
+                                <tr>
+                                    <td>Credit Limit</td>
+                                    <td>CL-10</td>
+                                    <td>CL-25</td>
+                                    <td>CL-50</td>
+                                </tr>
+                                <tr>
+                                    <td>Overdraft Fee</td>
+                                    <td>OD-25</td>
+                                    <td>OD-50</td>
+                                    <td>OD-75</td>
+                                </tr>
+                                <tr>
+                                    <td>Insurance</td>
+                                    <td>DL</td>
+                                    <td>DLP</td>
+                                    <td>DLPJ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div ng-if="!ques.tab">
-                    <table class="table ceb-table">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>12/05/2007</td>
-                                <td>$310.12</td>
-                            </tr>
-                            <tr>
-                                <td>09/06/2007</td>
-                                <td>$278.45</td>
-                            </tr>
-                            <tr>
-                                <td>22/06/2007</td>
-                                <td>$55.75</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table ceb-table">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>03/07/2007</td>
-                                <td>$98.15</td>
-                            </tr>
-                            <tr>
-                                <td>10/07/2007</td>
-                                <td>$115.35</td>
-                            </tr>
-                            <tr>
-                                <td>20/07/2007</td>
-                                <td>$34.25</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+            <div class="row" ng-if="ques.test.set == 0">
+                <div class="width-500">
+                    <h1 class="section-heading instruction">INFORMATION</h1>
+                    <div class="btn-group-container">
+                        <div class="instruction-heading">Coding Customer Transactions</div>
+                        <p>
+                            When coding customer transactions always begin with the type of account, followed by dollar amount withdrawal and deposit codes.
+                        </p>
+                        <p>
+                            There are two types of accounts:
+                            <strong>PAS</strong> and <strong>GLD</strong>.
+                        </p>
+                    </div>
+                    <div>
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Code</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>For a withdrawal</td>
+                                    <td>W</td>
+                                </tr>
+                                <tr>
+                                    <td>For a deposit</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>PAS withdraws more than $1,500</td>
+                                    <td>G</td>
+                                </tr>
+                                <tr>
+                                    <td>GLD withdraws more than $2,500</td>
+                                    <td>H</td>
+                                </tr>
+                                <tr>
+                                    <td>PAS deposits more than $500 </td>
+                                    <td>D</td>
+                                </tr>
+                                <tr>
+                                    <td>GLD deposits more than $1,000</td>
+                                    <td>S</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-if="ques.test.set == 2">
+                <div class="width-500">
+                    <h1 class="section-heading instruction">INFORMATION</h1>
+                    <div class="btn-group-container">
+                        <div class="btn-group btn-group-justified">
+                            <a href="#" class="btn btn-tab" ng-class="{'active': ques.tab}" ng-click="ques.tab = true">Customer Interaction Info</a>
+                            <a href="#" class="btn  btn-tab" ng-class="{'active': !ques.tab}" ng-click="ques.tab = false">Interaction Codes</a>
+                        </div>
+                    </div>
+                    <div ng-if="ques.tab">
+                        <table class="table ceb-table">
+                            <tbody>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Mary S. Stevens</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>16 E. Pine Avenue</td>
+                                </tr>
+                                <tr>
+                                    <td>Last Updated</td>
+                                    <td>07/21/2007</td>
+                                </tr>
+                                <tr>
+                                    <td>Account No.</td>
+                                    <td>1225637</td>
+                                </tr>
+                                <tr>
+                                    <td>Telephone</td>
+                                    <td>(310) 645-7878</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Interaction</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01/20/2007</td>
+                                    <td>CO, AB, 82</td>
+                                </tr>
+                                <tr>
+                                    <td>03/02/2007</td>
+                                    <td>LT, AR, 23</td>
+                                </tr>
+                                <tr>
+                                    <td>03/17/2007</td>
+                                    <td>CO, LY, PD, 93</td>
+                                </tr>
+                                <tr>
+                                    <td>05/22/2007</td>
+                                    <td>LT, AR, 45</td>
+                                </tr>
+                                <tr>
+                                    <td>05/22/2007</td>
+                                    <td>CO, PD, 82</td>
+                                </tr>
+                                <tr>
+                                    <td>07/21/2007</td>
+                                    <td>CO, AB, CA</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div ng-if="!ques.tab">
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12/05/2007</td>
+                                    <td>$310.12</td>
+                                </tr>
+                                <tr>
+                                    <td>09/06/2007</td>
+                                    <td>$278.45</td>
+                                </tr>
+                                <tr>
+                                    <td>22/06/2007</td>
+                                    <td>$55.75</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>03/07/2007</td>
+                                    <td>$98.15</td>
+                                </tr>
+                                <tr>
+                                    <td>10/07/2007</td>
+                                    <td>$115.35</td>
+                                </tr>
+                                <tr>
+                                    <td>20/07/2007</td>
+                                    <td>$34.25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> 
+            <div class="row" ng-if="ques.test.set == 3">
+                <div class="width-500">
+                    <h1 class="section-heading instruction">INFORMATION</h1>
+                    <div class="btn-group-container">
+                        <div class="btn-group btn-group-justified">
+                            <a href="#" class="btn btn-tab" ng-class="{'active': ques.tab}" ng-click="ques.tab = true">Retail Promotion Inquiry</a>
+                            <a href="#" class="btn  btn-tab" ng-class="{'active': !ques.tab}" ng-click="ques.tab = false">Past Transactions</a>
+                        </div>
+                    </div>
+                    <div ng-if="ques.tab">
+                        <table class="table ceb-table">
+                            <tbody>
+                                <tr>
+                                    <td>Discount Starting Date</td>
+                                    <td>06/01/2007</td>
+                                </tr>
+                                <tr>
+                                    <td>Cash-Back Bonus Starting Date</td>
+                                    <td>06/01/2007</td>
+                                </tr>
+                                <tr>
+                                    <td>Today’s Date</td>
+                                    <td>07/21/2007</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Terms for Retailer Discount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Length of program</td>
+                                    <td>60 days</td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum required purchase</td>
+                                    <td>$200.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Retail discount rate</td>
+                                    <td>0.5%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Terms for Retailer Cash-Back Bonus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Length of program</td>
+                                    <td>60 days</td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum required purchase</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Retail discount rate</td>
+                                    <td>0.25%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div ng-if="!ques.tab">
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12/05/2007</td>
+                                    <td>$310.12</td>
+                                </tr>
+                                <tr>
+                                    <td>09/06/2007</td>
+                                    <td>$278.45</td>
+                                </tr>
+                                <tr>
+                                    <td>22/06/2007</td>
+                                    <td>$55.75</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>03/07/2007</td>
+                                    <td>$98.15</td>
+                                </tr>
+                                <tr>
+                                    <td>10/07/2007</td>
+                                    <td>$115.35</td>
+                                </tr>
+                                <tr>
+                                    <td>20/07/2007</td>
+                                    <td>$34.25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- info set 1 ends  -->
-        <div class="row" ng-if="ques.test.set == 1">
-            <div class="width-500">
-              <h1 class="section-heading instruction">INFORMATION</h1>
-                <div class="btn-group-container">
-                
-                    <div class="text">Coding Commercial Transactions</div>
-                </div>
-                <div>
-                    <table class="table ceb-table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Silver</th>
-                                <th>Gold</th>
-                                <th>Platinum</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Account</td>
-                                <td>SA</td>
-                                <td>GA</td>
-                                <td>PA</td>
-                            </tr>
-                            <tr>
-                                <td>Credit Limit</td>
-                                <td>CL-10</td>
-                                <td>CL-25</td>
-                                <td>CL-50</td>
-                            </tr>
-                            <tr>
-                                <td>Overdraft Fee</td>
-                                <td>OD-25</td>
-                                <td>OD-50</td>
-                                <td>OD-75</td>
-                            </tr>
-                            <tr>
-                                <td>Insurance</td>
-                                <td>DL</td>
-                                <td>DLP</td>
-                                <td>DLPJ</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div> <!-- container -->
+        <!-- container -->
     </div>
-   
     <div class="white-div">
         <div class="container questions">
             <div class="row">
@@ -201,7 +368,7 @@ Question page VIEW
                         <div class="options-margin" ng-repeat="option in ques.test.currentQuestion.options">
                             <div class="ceb-options" ng-class="{'active': ques.answer == option.option}" ng-click="ques.answer = option.option">
                                 <span class="sr-only">Option {{$index+1}} {{option.option}}</span>
-                                <span>{{option.option}}</span>
+                                <span class="option-text">{{option.option}}</span>
                                 <input class="pull-right" type="radio" name="optradio" ng-model="ques.answer" ng-value="option.option">
                                 <label>
                                 </label>
@@ -220,10 +387,8 @@ Question page VIEW
 ">
         <div class="container">
             <div class="row">
-                <div class="width-500 ">
-                    <span class="ceb-progress-dot active"></span>
-                    <span class="ceb-progress-dot active"></span>
-                    <span class="ceb-progress-dot active"></span>
+                <div class="width-500">
+                    <span class="ceb-progress-dot completed"></span>
                     <span class="ceb-question-status pull-right">{{ques.currnetQuestionIndex+1}} of {{ques.sectionQuestions}}</span>
                     <span class="ceb-progress-dot margin-left-10 pull-right"></span>
                     <uib-progressbar class="progress-striped" value="ques.questionProgressPercent" type="success"></uib-progressbar>
@@ -232,4 +397,4 @@ Question page VIEW
         </div>
     </div>
 </div>
-<!-- questions controler  -->
+<!-- questions controller  -->

@@ -9,7 +9,7 @@ angular
 // TIMER DEMO
 
 
-function questionController($scope, $http, $log,$document) {
+function questionController($scope, $http, $log, $document) {
 
     var vm = this;
     vm.open = false;
@@ -38,6 +38,7 @@ function questionController($scope, $http, $log,$document) {
             vm.test.currentQuestion = vm.test.questions[0];
             vm.sectionQuestions = vm.test.questions.length;
             vm.currnetQuestionIndex = 0;
+          vm.setsMaxIndex  =   vm.test.sets.length-1; 
             console.log(vm.test);
                     calcQuestioPercent();
         });
@@ -47,11 +48,11 @@ function questionController($scope, $http, $log,$document) {
         if (vm.currnetQuestionIndex < vm.sectionQuestions-1) {
             vm.currnetQuestionIndex += 1;
             vm.test.currentQuestion = vm.test.questions[vm.currnetQuestionIndex];
-        } else if((vm.currnetQuestionIndex < vm.sectionQuestions-1) ||  vm.test.set == 0
+        } else if((vm.currnetQuestionIndex < vm.sectionQuestions-1) ||  vm.test.set <  vm.setsMaxIndex
 
 ){
-vm.test.set = 1;
-            vm.test.questions = vm.test.sets[1].questions;
+vm.test.set += 1;
+            vm.test.questions = vm.test.sets[vm.test.set].questions;
             vm.test.currentQuestion = vm.test.questions[0];
             vm.sectionQuestions = vm.test.questions.length;
             vm.currnetQuestionIndex = 0;
