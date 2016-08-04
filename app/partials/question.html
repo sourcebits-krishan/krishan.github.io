@@ -25,7 +25,7 @@ Question page VIEW
                 <div class="width-500">
                     <h1 class="section-heading instruction">INFORMATION</h1>
                     <div class="btn-group-container">
-                        <div class="instruction-heading">Coding Commercial Transactions</div>
+                        <div class="instruction-heading">Coding Commercial Accounts</div>
                     </div>
                     <div>
                         <table class="table ceb-table">
@@ -64,6 +64,11 @@ Question page VIEW
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="btn-group-container">
+                        <p>
+                            Note: Codes are always listed first by account, then credit limit, overdraft, and insurance.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -123,7 +128,7 @@ Question page VIEW
                     <h1 class="section-heading instruction">INFORMATION</h1>
                     <div class="btn-group-container">
                         <div class="btn-group btn-group-justified">
-                            <a href="#" class="btn btn-tab" ng-class="{'active': ques.tab}" ng-click="ques.tab = true">Customer Interaction Info</a>
+                            <a href="#" class="btn btn-tab" ng-class="{'active': ques.tab}" ng-click="ques.tab = true">Customer Interaction Info.</a>
                             <a href="#" class="btn  btn-tab" ng-class="{'active': !ques.tab}" ng-click="ques.tab = false">Interaction Codes</a>
                         </div>
                     </div>
@@ -173,11 +178,16 @@ Question page VIEW
                                     <td>CO, LY, PD, 93</td>
                                 </tr>
                                 <tr>
+                                    <td>05/01/2007</td>
+                                    <td>CO, AB, LY, 76, 93
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>05/22/2007</td>
                                     <td>LT, AR, 45</td>
                                 </tr>
                                 <tr>
-                                    <td>05/22/2007</td>
+                                    <td>06/19/2007</td>
                                     <td>CO, PD, 82</td>
                                 </tr>
                                 <tr>
@@ -189,46 +199,56 @@ Question page VIEW
                     </div>
                     <div ng-if="!ques.tab">
                         <table class="table ceb-table">
-                            <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Amount</th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
-                                    <td>05/12/2007</td>
-                                    <td>$310.12</td>
+                                    <td>LY </td>
+                                    <td>Late payment dispute</td>
                                 </tr>
                                 <tr>
-                                    <td>06/09/2007</td>
-                                    <td>$278.45</td>
+                                    <td>AB</td>
+                                    <td>Account balance inquiry  </td>
                                 </tr>
                                 <tr>
-                                    <td>06/22/2007</td>
-                                    <td>$55.75</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table ceb-table">
-                            <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Amount</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>07/03/2007</td>
-                                    <td>$98.15</td>
+                                    <td>LT</td>
+                                    <td>Send late payment notice</td>
                                 </tr>
                                 <tr>
-                                    <td>07/12/2007</td>
-                                    <td>$115.35</td>
+                                    <td>CA</td>
+                                    <td>Account closing</td>
                                 </tr>
                                 <tr>
-                                    <td>07/20/2007</td>
-                                    <td>$34.25</td>
+                                    <td>CO</td>
+                                    <td>Customer initiated call</td>
+                                </tr>
+                                <tr>
+                                    <td>PD</td>
+                                    <td>Customer will make payment in 5 days</td>
+                                </tr>
+                                <tr>
+                                    <td>AR </td>
+                                    <td>
+                                        Account past due courtesy call
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>Unanswered telephone call </td>
+                                </tr>
+                                <tr>
+                                    <td>45</td>
+                                    <td>Telephone number does not exist </td>
+                                </tr>
+                                <tr>
+                                    <td>76</td>
+                                    <td>Customer change of address </td>
+                                </tr>
+                                <tr>
+                                    <td>82</td>
+                                    <td>Sales call</td>
+                                </tr>
+                                <tr>
+                                    <td>93</td>
+                                    <td>Customer requested supervisor</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -325,16 +345,6 @@ Question page VIEW
                                     <td>06/22/2007</td>
                                     <td>$55.75</td>
                                 </tr>
-                            </tbody>
-                        </table>
-                        <table class="table ceb-table">
-                            <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Amount</th>
-                                </tr>
-                            </thead>
-                            <tbody>
                                 <tr>
                                     <td>07/03/2007</td>
                                     <td>$98.15</td>
@@ -386,15 +396,11 @@ Question page VIEW
 ">
         <div class="container">
             <div class="row">
-                <div class="width-500"> <span class="ceb-question-status pull-right">
-                {{ques.currnetQuestionIndex+1}} of {{ques.sectionQuestions}}
-                </span>
-                <div>
-                    <span ng-repeat="sets in ques.test.sets"><span class="ceb-progress-dot" ng-class="{ 'completed': $index <= ques.test.set  }" ng-if="ques.test.set!= $index"></span>
-                        <!-- <span class="ceb-progress-dot margin-left-10 pull-right"></span> -->
-                        <uib-progressbar class="progress-striped" value="ques.questionProgressPercent" type="success" ng-if="ques.test.set== $index"></uib-progressbar>
-                    </span>
-                    </div>
+                <div class="width-500"> <span class="ceb-question-status pull-right">{{ques.currnetQuestionIndex+1}} of {{ques.sectionQuestions}}</span>
+                    <span class="ceb-progress-dot completed"></span>
+                    <span class="ceb-progress-dot completed"></span>
+                    <span class="ceb-progress-dot margin-left-10 pull-right"></span>
+                    <uib-progressbar class="progress-striped" value="ques.questionProgressPercent" type="success"></uib-progressbar>
                 </div>
             </div>
         </div>
