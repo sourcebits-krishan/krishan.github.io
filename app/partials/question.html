@@ -6,7 +6,7 @@ Question page VIEW
     <div id="sticky">
         <div class="timer-bar">
             <uib-progressbar value="ques.percent">
-                <span class="sr-only">Split button!</span>
+                <span class="sr-only">{{ques.percent}}</span>
             </uib-progressbar>
         </div>
         <!--  timer -->
@@ -20,9 +20,58 @@ Question page VIEW
     </div>
     <div class="instructions-wrapper">
         <div class="container instructions">
-            <!-- info set 1 ends  -->
-            <div class="row" ng-if="ques.test.set == 1">
-                <div class="width-500">
+            <div class="row">
+                <div class="width-500" ng-if="ques.test.set == 0">
+                    <h1 class="section-heading instruction">INFORMATION</h1>
+                    <div class="btn-group-container">
+                        <div class="instruction-heading">Coding Customer Transactions</div>
+                        <p>
+                            When coding customer transactions <strong>always</strong> begin with the type of account, followed by dollar amount withdrawal and deposit codes.
+                        </p>
+                        <p>
+                            There are two types of accounts:
+                            <strong>PAS</strong> and <strong>GLD</strong>.
+                        </p>
+                    </div>
+                    <div>
+                        <table class="table ceb-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Code</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>For a withdrawal</td>
+                                    <td>W</td>
+                                </tr>
+                                <tr>
+                                    <td>For a deposit</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>PAS withdraws more than $1,500</td>
+                                    <td>G</td>
+                                </tr>
+                                <tr>
+                                    <td>GLD withdraws more than $2,500</td>
+                                    <td>H</td>
+                                </tr>
+                                <tr>
+                                    <td>PAS deposits more than $500 </td>
+                                    <td>D</td>
+                                </tr>
+                                <tr>
+                                    <td>GLD deposits more than $1,000</td>
+                                    <td>S</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+           
+                <div class="width-500" ng-if="ques.test.set == 1">
                     <h1 class="section-heading instruction">INFORMATION</h1>
                     <div class="btn-group-container">
                         <div class="instruction-heading">Coding Commercial Accounts</div>
@@ -71,60 +120,8 @@ Question page VIEW
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="row" ng-if="ques.test.set == 0">
-                <div class="width-500">
-                    <h1 class="section-heading instruction">INFORMATION</h1>
-                    <div class="btn-group-container">
-                        <div class="instruction-heading">Coding Customer Transactions</div>
-                        <p>
-                            When coding customer transactions always begin with the type of account, followed by dollar amount withdrawal and deposit codes.
-                        </p>
-                        <p>
-                            There are two types of accounts:
-                            <strong>PAS</strong> and <strong>GLD</strong>.
-                        </p>
-                    </div>
-                    <div>
-                        <table class="table ceb-table">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Code</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>For a withdrawal</td>
-                                    <td>W</td>
-                                </tr>
-                                <tr>
-                                    <td>For a deposit</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr>
-                                    <td>PAS withdraws more than $1,500</td>
-                                    <td>G</td>
-                                </tr>
-                                <tr>
-                                    <td>GLD withdraws more than $2,500</td>
-                                    <td>H</td>
-                                </tr>
-                                <tr>
-                                    <td>PAS deposits more than $500 </td>
-                                    <td>D</td>
-                                </tr>
-                                <tr>
-                                    <td>GLD deposits more than $1,000</td>
-                                    <td>S</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row" ng-if="ques.test.set == 2">
-                <div class="width-500">
+          
+                <div class="width-500 type3"  ng-if="ques.test.set == 2">
                     <h1 class="section-heading instruction">INFORMATION</h1>
                     <div class="btn-group-container">
                         <div class="btn-group btn-group-justified">
@@ -254,9 +251,8 @@ Question page VIEW
                         </table>
                     </div>
                 </div>
-            </div>
-            <div class="row" ng-if="ques.test.set == 3">
-                <div class="width-500">
+         
+                <div class="width-500 type4" ng-if="ques.test.set == 3">
                     <h1 class="section-heading instruction">INFORMATION</h1>
                     <div class="btn-group-container">
                         <div class="btn-group btn-group-justified">

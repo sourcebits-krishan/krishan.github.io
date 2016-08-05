@@ -6694,13 +6694,11 @@ h1.section-heading.question {
     font-family: 'proxima_semibold';
     background-color: #6F6F74; }
     .table thead > tr th:nth-child(even) {
-      background-color: #76767B;
-      min-width: 100px; }
+      background-color: #76767B; }
   .table tbody > tr:nth-child(odd) {
     background-color: #2E2E35; }
     .table tbody > tr:nth-child(odd) td:nth-child(even) {
-      background-color: #38383F;
-      min-width: 100px; }
+      background-color: #38383F; }
   .table tbody > tr:nth-child(even) {
     background-color: #43434A; }
     .table tbody > tr:nth-child(even) td:nth-child(even) {
@@ -6714,6 +6712,14 @@ h1.section-heading.question {
     border: none;
     color: #FBFBFB;
     padding: 4px 10px; }
+
+.type3 table thead > tr > th:nth-child(even),
+.type3 table tbody > tr:nth-child(odd) > td:nth-child(even) {
+  width: 335px; }
+
+.type4 table thead > tr > th:nth-child(even),
+.type4 table tbody > tr:nth-child(odd) > td:nth-child(even) {
+  width: 100px; }
 
 @media screen and (max-width: 768px) {
   .table-responsive {
@@ -6891,6 +6897,9 @@ h1.section-heading.question {
     margin-left: 0px; } }
 
 @media (max-width: 499px) {
+  .type3 table thead > tr > th:nth-child(even),
+  .type3 table tbody > tr:nth-child(odd) > td:nth-child(even) {
+    width: 200px; }
   .btn-group-justified {
     display: initial; }
   .btn-group-container {
