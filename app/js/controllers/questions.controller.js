@@ -39,6 +39,7 @@ function questionController($scope, $http, $log, $document) {
             vm.sectionQuestions = vm.test.questions.length;
             vm.currnetQuestionIndex = 0;
             vm.setsMaxIndex = vm.test.sets.length - 1;
+            vm.currentQuestionNum =  1;
             console.log(vm.test);
             calcQuestioPercent();
         });
@@ -48,6 +49,7 @@ function questionController($scope, $http, $log, $document) {
         if (vm.currnetQuestionIndex < vm.sectionQuestions - 1) {
             vm.currnetQuestionIndex += 1;
             vm.test.currentQuestion = vm.test.questions[vm.currnetQuestionIndex];
+             vm.currentQuestionNum +=  1;
         } else if ((vm.currnetQuestionIndex < vm.sectionQuestions - 1) || vm.test.set < vm.setsMaxIndex
 
         ) {
@@ -56,6 +58,7 @@ function questionController($scope, $http, $log, $document) {
             vm.test.currentQuestion = vm.test.questions[0];
             vm.sectionQuestions = vm.test.questions.length;
             vm.currnetQuestionIndex = 0;
+              vm.currentQuestionNum +=  1;
             calcQuestioPercent();
         }
         calcQuestioPercent();
@@ -63,7 +66,7 @@ function questionController($scope, $http, $log, $document) {
     }
 
     function calcQuestioPercent() {
-        vm.questionProgressPercent = ((vm.currnetQuestionIndex) * 100) / vm.sectionQuestions;
+        vm.questionProgressPercent = ((vm.currentQuestionNum-1) * 100) / vm.test.totalQuestions;
     }
 
     function startTimer(duration) {
