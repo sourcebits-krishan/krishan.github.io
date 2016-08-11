@@ -97,7 +97,7 @@ function questionController($scope, $http, $log, $document) {
     }
 
     function calcQuestioPercent() {
-        vm.questionProgressPercent = ((vm.currentQuestionNum-1) * 100) / vm.test.totalQuestions;
+        (vm.currentQuestionNum == vm.test.totalQuestions) ? vm.questionProgressPercent=100 : vm.questionProgressPercent = ((vm.currentQuestionNum-1) * 100) / vm.test.totalQuestions;
     }
 
     function startTimer(duration) {
