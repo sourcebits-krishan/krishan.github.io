@@ -12,6 +12,10 @@ angular.module('ceb', ['ui.router','ui.bootstrap','ngAnimate','duScroll'])
             url: "/question",
             templateUrl: "partials/question.html"
         })
+        .state('complete',{
+        	url:"/complete",
+        	templateUrl:"partials/complete.html"
+        })
 }]);
 angular.module('ceb')
 .value('duScrollDuration', 1000)
