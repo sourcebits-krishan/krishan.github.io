@@ -6732,6 +6732,21 @@ h1.section-heading.question {
   padding-bottom: 50px;
   font-size: 16px; }
 
+.output1 {
+  width: 510px;
+  padding-left: 15px; }
+
+.output2 {
+  width: 510px;
+  padding-left: 15px; }
+
+.output3 {
+  width: 510px;
+  padding-left: 15px; }
+
+.right-option {
+  color: #00adee; }
+
 .questions > .row {
   margin: 0px;
   padding-left: 0px;
@@ -6745,7 +6760,8 @@ h1.section-heading.question {
   height: 60px;
   padding-left: 20px;
   padding-right: 10px;
-  padding-top: 18px;
+  padding-top: 12px;
+  vertical-align: middle;
   color: #00adee;
   background: -webkit-linear-gradient(white, #f3f3f3);
   background: -o-linear-gradient(white, #f3f3f3);

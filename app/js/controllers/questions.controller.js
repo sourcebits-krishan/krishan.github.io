@@ -20,7 +20,7 @@ function questionController($scope, $http, $log, $document) {
         //    if (e.target !== this)
         // return;
 
-        vm.open = true
+        vm.open = true;
     }
     vm.closeOptions = function() {
 
@@ -28,6 +28,7 @@ function questionController($scope, $http, $log, $document) {
         // return;
         vm.open = false;
     }
+
 
     $http.get("images/data/testdata.json")
         .then(function(response) {
@@ -43,6 +44,36 @@ function questionController($scope, $http, $log, $document) {
             console.log(vm.test);
             calcQuestioPercent();
         });
+
+
+        $http.get("images/data/sampleQ.json")
+        .then(function(response) {
+
+            $scope.sampletest = response.data;
+            
+            $scope.samplequestion = $scope.sampletest.question;
+            $scope.sampleoption = $scope.sampletest.options;
+           
+           
+            
+            console.log($scope.sampletest);
+            console.log($scope.sampletest.question);
+             console.log($scope.sampletest.options[1]);
+           
+        });
+
+       
+
+        $scope.check=false;
+  console.log($scope.check);
+      
+    $scope.startEvaluation = function() {
+    $scope.check=true;
+    
+    console.log($scope.check);
+};
+
+
 
     vm.showNextQuestion = function() {
 

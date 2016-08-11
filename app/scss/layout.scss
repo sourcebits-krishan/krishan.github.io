@@ -246,6 +246,22 @@ h1.section-heading.question {
     background-color: white;
     padding-bottom: 50px;
     font-size: 16px;
+}   
+.output1 {
+    width:510px;
+    padding-left:15px;
+}
+.output2 {
+    width:510px;
+    padding-left:15px;
+}
+.output3 {
+    width:510px;
+    padding-left:15px;
+}
+.right-option
+{
+    color: #00adee;
 }
 
 .questions>.row {
@@ -261,13 +277,14 @@ h1.section-heading.question {
 .ceb-options {
     font-size: 16px;
     height: 60px;
+    
     // width: 25%;
     //margin: 10px;
     padding-left: 20px;
     padding-right: 10px;
-    padding-top: 18px;
+    padding-top: 12px;
     //display: table-cell;
-    //vertical-align: middle;
+    vertical-align: middle;
     color: rgb( 0, 173, 238);
     background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(243, 243, 243));
     background: -o-linear-gradient(rgb(255, 255, 255), rgb(243, 243, 243));
